@@ -14,10 +14,18 @@ Goran Mihalković
 
 Lucija Poslek
 
-Language: Croatian
-Domain: reviews of medical doctors
-Corpus size: 4000
---
+Language:
+
+Croatian
+
+Domain:
+
+reviews of medical doctors
+
+Corpus size: 
+
+4000
+
 
 Tools:
 --
