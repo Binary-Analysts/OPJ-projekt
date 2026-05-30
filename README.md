@@ -1,6 +1,6 @@
 # Project of Croatian Sentiment Reviews 
 
-Članovi ekipe:
+Članovi skupine:
 
 
 * Katja Bešlić
