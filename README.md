@@ -1,5 +1,5 @@
 Project of Croatian Sentiment Reviews 
-----
+---
 
 Članovi ekipe:
 --
