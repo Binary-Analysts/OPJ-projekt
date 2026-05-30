@@ -1,7 +1,7 @@
 Project of Croatian Sentiment Reviews 
 --
 
-Team members:
+Članovi ekipe:
 --
 
 Katja Bešlić
@@ -14,35 +14,39 @@ Goran Mihalković
 
 Lucija Poslek
 
-Corpus:
+Opis:
 --
-Language: Croatian
-Domain: reviews of medical doctors
-Corpus size: 4000
+Projekt je rad studenata kolegija Obrada prirodnog jezika. Cilj je izrada korpusa na hrvatskom jeziku, analiza i klasifikacija sentimenata. Temelji se na vlastitim prikupljenim podacima i klasificiji rečenica te obradom i izračunom podataka koristeći modele strojnog i dubokog učenja te transformatora. 
 
-Annotation:
+Korpus:
+--
+Jezik: hrvatski
+Domena: recenzije doktora
+Veličina korpusa: 4070
+
+Anotiranje:
 --
 
-Train:
+Treniranje:
 --
 
-Methods:
+Metode:
 --
-Machine learning: 
-SVM
+Strojno učenje (ML): 
+SVM,
 Logistic Regression
 
-Shallow Deep learning:
-GRM
+Plitko duboko učenje (SDL):
+GRM,
 LSTM
 
-Transformers:
-BERTić
-Gemma 2
+Transformeri:
+BERTić,
+Gemma 2,
 CroSlo
 
 
-Tools:
+Alati:
 --
 
 
