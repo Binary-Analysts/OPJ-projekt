@@ -20,7 +20,29 @@ Language: Croatian
 Domain: reviews of medical doctors
 Corpus size: 4000
 
+Annotation:
+--
+
+Train:
+--
+
+Methods:
+--
+Machine learning: 
+SVM
+Logistic Regression
+
+Shallow Deep learning:
+GRM
+LSTM
+
+Transformers:
+BERTić
+Gemma 2
+CroSlo
+
+
 Tools:
 --
-Methodology:
---
+
+
