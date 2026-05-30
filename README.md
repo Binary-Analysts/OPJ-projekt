@@ -22,7 +22,7 @@ Projekt je rad studenata kolegija Obrada prirodnog jezika studija informacijskih
 Korpus:
 --
 * Jezik: hrvatski
-* Domena: recenzije doktora
+* Domena: recenzije doktora (dentalne) medicine - zdravstvo 
 * Veličina korpusa: 4070
 
 Za prikupljanje sadržaja korpusa korištena je web-stranica najdoktor.com. Portal omogućava korisnicima komentiranje rada i stručnosti liječnika privatnog i javnog sektora iz različitih medicinskih domena. Komentari služe kao recenzije koje se potom označuju nekom od oznaka, poput pozitivno, negativno i mješovito. Komentari su javno dostupni, a podaci komentatora, poput korisničkog imena, se ne prikupljaju.
@@ -54,8 +54,5 @@ Transformeri:
 * Gemma 2
 * CroSlo
 
-
-Alati:
---
 
 
