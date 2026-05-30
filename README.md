@@ -17,7 +17,7 @@ Project of Croatian Sentiment Reviews
 
 Opis:
 --
-Projekt je rad studenata kolegija Obrada prirodnog jezika. Cilj je izrada korpusa na hrvatskom jeziku, analiza i klasifikacija sentimenata. Temelji se na vlastitim prikupljenim podacima i klasificiji rečenica te obradom i izračunom podataka koristeći modele strojnog i dubokog učenja te transformatora. 
+Projekt je rad studenata kolegija Obrada prirodnog jezika studija informacijskih znanosti. Cilj je izrada korpusa na hrvatskom jeziku, analiza i klasifikacija sentimenata. Temelji se na vlastitim prikupljenim podacima i klasificiji rečenica te obradom i izračunom podataka koristeći modele strojnog i dubokog učenja te transformatora. 
 
 Korpus:
 --
@@ -25,6 +25,8 @@ Korpus:
 * Domena: recenzije doktora
 * Veličina korpusa: 4070
 
+Za prikupljanje sadržaja korpusa korištena je web-stranica najdoktor.com. Portal omogućava korisnicima komentiranje rada i stručnosti liječnika privatnog i javnog sektora iz različitih medicinskih domena. Komentari služe kao recenzije koje se potom označuju nekom od oznaka, poput pozitivno, negativno i mješovito. Komentari su javno dostupni, a podaci komentatora, poput korisničkog imena, se ne prikupljaju.
+Korpus sadržava 4070 rečenica uzetih iz 825 komentara o 25 liječnika.
 
 Pilot anotiranje:
 --
