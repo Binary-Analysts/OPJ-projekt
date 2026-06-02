@@ -26,10 +26,10 @@ Korpus:
 Za prikupljanje sadržaja korpusa korištena je web-stranica [najdoktor.com](najdoktor.com). Portal omogućava korisnicima komentiranje rada i stručnosti liječnika privatnog i javnog sektora iz različitih medicinskih domena. Komentari služe kao recenzije koje se potom označuju nekom od oznaka, poput pozitivno, negativno i mješovito. Komentari su javno dostupni, a podaci komentatora, poput korisničkog imena, se ne prikupljaju.
 Korpus sadržava 4070 rečenica uzetih iz 825 komentara o 25 liječnika.
 
-Pilot anotiranje:
+_Pilot_-anotiranje:
 --
 
-Projekt je zahtijevao provođenje _pilot_-anotacijske kampanje prije konačnog označavanja cijelog skupa. Za potrebe ovog pilota odabran je reprezentativni nasumiačan uzorak od 150 rečenica iz našeg korpusa. Zadatak svakog člana tima bio je neovisno analizirati i označiti emocionalni ton (sentiment) svake rečenice. U našem specifičnom projektu, anotacijska shema proširena je na pet kategorija, čime smo obuhvatili sljedeće tonove: pozitivan, negativan, sarkastičan, mješoviti (mixed) i neutralan. Četiri člana su provela osnovnu anotaciju, dok je peti član čiji je zadatak bio donijeti konačnu odluku u visoko ambivalentnim situacijama nakon konzultacije s grupom.
+Projekt je zahtijevao provođenje _pilot_-anotacijske kampanje prije konačnog označavanja cijelog skupa. Za potrebe ovog pilota odabran je reprezentativni nasumiačan uzorak od 150 rečenica iz našeg korpusa. Zadatak svakog člana tima bio je neovisno analizirati i označiti emocionalni ton (sentiment) svake rečenice. U našem specifičnom projektu, anotacijska shema proširena je na pet kategorija, čime smo obuhvatili sljedeće tonove: pozitivan, negativan, sarkastičan, mješoviti (mixed) i neutralan. Četiri člana su provela osnovnu anotaciju, dok je peti član donio konačnu odluku u visoko ambivalentnim situacijama nakon konzultacije s grupom.
 
 Anotiranje i eksploratorna analiza:
 --
@@ -45,19 +45,28 @@ Završna i tehnički najzahtjevnija faza projekta obuhvaćala je implementaciju 
 
 ### Metode:
 
+Odlučili smo se za rad s pet klasa koristeći tri metode - strojno učenje, duboko učenje i transformatore. Svi modeli dostupni su u istoimenim mapama, npr. "duboko učenje" sadržava modele GRM i LSTM.
+
 Strojno učenje (ML): 
 * SVM
 * Logistic Regression
+
+Napravili smo 4 modela (1 za LR – pojedinačni train setovi testirani na pojedinačnim test setovima(svake grupe), 1 za LR- zajednički train set sastavljen od trainova svih grupa, testiran na pojedinačnim test setovima svake grupe, 1 SVM pojedinačni train setovi testirani na pojedinačnim test setovima(svake grupe) i još 1 SVM zajednički train set sastavljen od treniranih setova svih grupa te testiran na pojedinačnim test setovima svake grupe. Uz to, Izračunata je točnost, preciznost, odziv i ključna F1-mjera za svaki model.
 
 Plitko duboko učenje (SDL):
 * GRM
 * LSTM
 
-Transformeri:
+Korišteni su LSTM modeli za obradu teksta po sekvencama. Nisu kroišteni pojedinačni splitovi korpusa, već jedan veliki korpus koji smo splitali direktno u kodu pomoću StratifiedGroupKFold. To doprinosi boljoj raspodijeljenosti. Izračunata je točnost, preciznost, odziv i ključna F1-mjera. Sva četiri konačna korpusa su sjedinjena u jedan dokument. Uz pomoć programa osigurano je da  recenzije budu numerirane kontinuirano kroz cijeli dokument
+
+Transformatori:
 * BERTić
 * Gemma 2
-* CroSlo
+
+Korišteni su gogoleov model Gemma 2 i BERTić, prilagođen hrvatskom jeziku. Kao i za modele dubokog učenja, primijenjena je promjena podatkovnog seta kako bi se osigurala bolja raspodijeljenost. Uz tom, izračunata je točnost, preciznost, odziv i ključna F1-mjera.
 
 
+### Demo
+-	Uzeli smo modele koji su nam pokazali najbolje rezultate, LR_zajednicki, GRU model i GEMMA spojili trenirane spremljene modele u jednu skrpitu. Napravili Gradio prompt gdje se od korisnika traži da upiše rečenicu i onda se prikazuju predviđanja za sva tri modela. Demo je dostupan kao  datoteka u istoimenoj mapi.
 
 
