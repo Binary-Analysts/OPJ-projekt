@@ -1,0 +1,38 @@
+LR-svi
+Test set 1
+Confusion Matrix:
+          negative  neutral  positive  mixed  sarcasm
+negative        36        0        15      0        0
+neutral         53       17        36      0        0
+positive        16        5       211      0        0
+mixed            0        0         2      0        0
+sarcasm          0        0         0      0        0
+
+Test set 2
+Confusion Matrix:
+          negative  neutral  positive  mixed  sarcasm
+negative       262       22        86      0        0
+neutral         51       25        38      0        0
+positive        12        4       119      0        0
+mixed           12        5         8      0        0
+sarcasm          4        1         1      0        0
+
+Test set 3
+
+Confusion Matrix:
+          negative  neutral  positive  mixed  sarcasm
+negative       100       15        34      1        0
+neutral         23       18        30      1        0
+positive        20        9       342      0        0
+mixed            4        2         9      1        0
+sarcasm          0        0         1      0        0
+
+
+Test set 4
+Confusion Matrix:
+          negative  neutral  positive  mixed  sarcasm
+negative        64        4        24      1        0
+neutral         10        8        10      0        0
+positive        11        5       134      1        0
+mixed            2        0         1      0        0
+sarcasm          0        0         0      0        0
