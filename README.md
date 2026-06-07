@@ -69,6 +69,18 @@ Korišteni su gogoleov model Gemma 2 i BERTić, prilagođen hrvatskom jeziku. Ka
 Demo
 --
  
-Uzeli smo modele koji su nam pokazali najbolje rezultate, LR_zajednicki, GRU model i GEMMA spojili trenirane spremljene modele u jednu skrpitu. Napravili Gradio prompt gdje se od korisnika traži da upiše rečenicu i onda se prikazuju predviđanja za sva tri modela. Demo je dostupan kao  datoteka u istoimenoj mapi.
+Uzeli smo modele koji su nam pokazali najbolje rezultate, LR_zajednicki, GRU model i GEMMA spojili trenirane spremljene modele u jednu skrpitu. Napravili Gradio prompt gdje se od korisnika traži da upiše rečenicu i onda se prikazuju predviđanja za sva tri modela. Demo je dostupan kao  datoteka u istoimenoj mapi. Dostupan je i na [huggingface platformi](https://huggingface.co/spaces/BinaryAnalysts/DEMO-OPJ)
+
+Rezultati
+--
+
+
+|        Model        | Točnost |  Preciznost | Odziv | F1-mjera |
+| ------------------- | ------- | ----------- | ----- | -------- |  
+| Logistic Regression |   76%   |     72%     |  76%  |   73%    |
+| GRU                 |  66,8%  |    67,5%    | 66,8% |  65,9%   |
+| Gemma 2             |   85%   |    84,5%    |  85%  |  84,7%   |
+ 
+
 
 
