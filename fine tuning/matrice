@@ -1,0 +1,8 @@
+Gemma
+Confusion matrix:
+            mixed      negative   neutral    positive   sarcasm
+mixed         27        14          8         19          0
+negative      6        631         85         36          2
+neutral       2         66        288         53          2
+positive      9         34         55       1379          0
+sarcasm       1         10          4          4          0
