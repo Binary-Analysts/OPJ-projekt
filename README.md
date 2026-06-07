@@ -34,7 +34,7 @@ Projekt je zahtijevao provođenje _pilot_-anotacijske kampanje prije konačnog o
 Anotiranje i eksploratorna analiza
 --
 
-Nakon uspješno završenog _pilot_ anotiranja i usvajanja konačnih smjernica, pokrenuta je finalna kampanja kompletne anotacije cjelokupnog korpusa od 4070 rečenica. Kako bi se osigurala objektivnost, odredili smo četiri anotatora po rečenici, a peti je član tima preuzeo ulogu glavnog anotatora podataka (data curator) čime je svakoj rečenici dodijeljena konačna oznaka. Konačna oznaka za svaku rečenicu izvedena je principom većinskog glasovanja. Kao izravni rezultati ove faze generirane su dvije ključne stvari: četiri stupca datoteke sadrži podatkovni skup sa svim pojedinačnim ocjenama i tragovima svih anotatora te peti stupac koji predstavlja pročišćeni skup s jednom, konačno usvojenom i agregiranom oznakom tona po rečenici. Anotirani korpus dostupan je kao .csv datoteka u mapi "korpus datoteke" u cjelovitom, pojedinačnom i grupiranom izdanju.
+Nakon uspješno završenog _pilot_-anotiranja i usvajanja konačnih smjernica, pokrenuta je finalna kampanja kompletne anotacije cjelokupnog korpusa od 4070 rečenica. Kako bi se osigurala objektivnost, odredili smo četiri anotatora po rečenici, a peti je član tima preuzeo ulogu glavnog anotatora podataka (data curator) čime je svakoj rečenici dodijeljena konačna oznaka. Konačna oznaka za svaku rečenicu izvedena je principom većinskog glasovanja. Kao izravni rezultati ove faze generirane su dvije ključne stvari: četiri stupca datoteke sadrži podatkovni skup sa svim pojedinačnim ocjenama i tragovima svih anotatora te peti stupac koji predstavlja pročišćeni skup s jednom, konačno usvojenom i agregiranom oznakom tona po rečenici. Anotirani korpus dostupan je kao .csv datoteka u mapi "korpus datoteke" u cjelovitom, pojedinačnom i grupiranom izdanju.
 
 Fiksiranjem konačnih oznaka započeli smo s provedbom detaljne eksploratorne analize podataka (EDA). Izračunata je distribucija klasa (točan broj pozitivnih, negativnih, neutralnih, sarkastičnih i mješovitih rečenica), kao i statistika duljine rečenica (prosječan broj riječi, te identifikacija najkraće i najduže rečenice u cijelom korpusu). Podaci su potom, korištenjem biblioteke sklearn, podijeljeni na skupove za treniranje (80%), validaciju (5% do 10%) i testiranje (10% do 15%) , a dobivene podjele stavljene su na raspolaganje ostalim grupama i pohranjene u mapu za zajedničko korištenje. Statistika je dostpuna u mapi 
 
@@ -74,6 +74,9 @@ Uzeli smo modele koji su nam pokazali najbolje rezultate, LR_zajednicki, GRU mod
 Rezultati
 --
 
+Odabrali smo tri najbolje rangirana modela iz svake skupine pristupa: Logistic Regression, GRU i Gemma 2. 
+Sljedeća tablica pokazuje njihove konačne rezultate:
+
 
 |        Model        | Točnost |  Preciznost | Odziv | F1-mjera |
 | ------------------- | ------- | ----------- | ----- | -------- |  
@@ -82,5 +85,5 @@ Rezultati
 | Gemma 2             |   85%   |    84,5%    |  85%  |  84,7%   |
  
 
-
+Najbolje je rezultate ostvario model Gemma 2 -  značajnih 85% točnosti te F1-mjeru od 84,7%. Time je nadmašio klasične modele strojnog učenja i modele dubokog učenja. _Confusion matrix_ pokazuje da svi modeli vrlo uspješno prepoznaju pozitivne i negativne rečenice, što je i očekivano obzirom na to da one čine najveći dio korpusa. Neutralne su rečenice predstavljale veći izazov za sve modele. To može biti zato što dijele vokabular i s pozitivnim i s negativnim recenzijama, zbog čega model može napraviti pogrešku. Najviše se grešaka događa kod klasifikacije sarkazma s obzirom na kompleksnost takvih izraza.
 
