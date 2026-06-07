@@ -36,6 +36,14 @@ Anotiranje i eksploratorna analiza
 
 Nakon uspješno završenog _pilot_-anotiranja i usvajanja konačnih smjernica, pokrenuta je finalna kampanja kompletne anotacije cjelokupnog korpusa od 4070 rečenica. Kako bi se osigurala objektivnost, odredili smo četiri anotatora po rečenici, a peti je član tima preuzeo ulogu glavnog anotatora podataka (data curator) čime je svakoj rečenici dodijeljena konačna oznaka. Konačna oznaka za svaku rečenicu izvedena je principom većinskog glasovanja. Kao izravni rezultati ove faze generirane su dvije ključne stvari: četiri stupca datoteke sadrži podatkovni skup sa svim pojedinačnim ocjenama i tragovima svih anotatora te peti stupac koji predstavlja pročišćeni skup s jednom, konačno usvojenom i agregiranom oznakom tona po rečenici. Anotirani korpus dostupan je kao _.csv_ datoteka u mapi "korpus datoteke" u cjelovitom, pojedinačnom i grupiranom izdanju.
 
+U tablici je naveden broj rečenica prema sentimentu, a koje je zaključno odredio anotator podataka.
+
+ | Pozitivne | Negativne | Neutralne | Mješovite | Sarkastične |
+ | --------- | --------- | --------- | --------- | ----------- |
+ |    2003   |    1198   |    665    |    134    |      62     |
+
+
+
 Fiksiranjem konačnih oznaka započeli smo s provedbom detaljne eksploratorne analize podataka (EDA). Izračunata je distribucija klasa (točan broj pozitivnih, negativnih, neutralnih, sarkastičnih i mješovitih rečenica), kao i statistika duljine rečenica (prosječan broj riječi, te identifikacija najkraće i najduže rečenice u cijelom korpusu). Podaci su potom, korištenjem biblioteke _sklearn_, podijeljeni na skupove za treniranje (80%), validaciju (5% do 10%) i testiranje (10% do 15%), a dobivene podjele stavljene su na raspolaganje ostalim grupama i pohranjene u mapu za zajedničko korištenje. 
 
 
