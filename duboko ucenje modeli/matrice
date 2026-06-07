@@ -1,0 +1,8 @@
+Matrice - GRU
+Confusion matrix:
+            negative   neutral    positive   mixed      sarcasm
+negative        584         65        109          2          0
+neutral         201        115         89          6          0
+positive        280         72       1118          7          0
+mixed           42          3         13         10          0
+sarcasm         12          1          5          1          0
