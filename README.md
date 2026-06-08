@@ -88,7 +88,7 @@ Sljedeća tablica pokazuje njihove konačne rezultate:
 
 |        Model        | Točnost |  Preciznost | Odziv | F1-mjera |
 | ------------------- | ------- | ----------- | ----- | -------- |  
-| Logistic Regression |   76%   |     72%     |  76%  |   73%    |
+| Logistic Regression |   69%   |     66%     |  69%  |   66%    |
 | GRU                 |  66,8%  |    67,5%    | 66,8% |  65,9%   |
 | Gemma 2             |   85%   |    84,5%    |  85%  |  84,7%   |
  
