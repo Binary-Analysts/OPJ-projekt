@@ -44,7 +44,7 @@ U tablici je naveden broj rečenica prema sentimentu, a koje je zaključno odred
 
 
 
-Fiksiranjem konačnih oznaka započeli smo s provedbom detaljne eksploratorne analize podataka (EDA). Izračunata je distribucija klasa (točan broj pozitivnih, negativnih, neutralnih, sarkastičnih i mješovitih rečenica), kao i statistika duljine rečenica (prosječan broj riječi, te identifikacija najkraće i najduže rečenice u cijelom korpusu). Podaci su potom, korištenjem biblioteke _sklearn_, podijeljeni na skupove za treniranje (80%), validaciju (5% do 10%) i testiranje (10% do 15%), a dobivene podjele stavljene su na raspolaganje ostalim grupama i pohranjene u mapu za zajedničko korištenje. 
+Fiksiranjem konačnih oznaka započeli smo s provedbom detaljne eksploratorne analize podataka (EDA). Izračunata je distribucija klasa (točan broj pozitivnih, negativnih, neutralnih, sarkastičnih i mješovitih rečenica), kao i statistika duljine rečenica (prosječan broj riječi, te identifikacija najkraće i najduže rečenice u cijelom korpusu). Podaci su potom, korištenjem biblioteke _sklearn_, podijeljeni na skupove za treniranje (80%), validaciju (20%) i testiranje (20%), a dobivene podjele stavljene su na raspolaganje ostalim grupama i pohranjene u mapu za zajedničko korištenje. 
 
 
 Treniranje
